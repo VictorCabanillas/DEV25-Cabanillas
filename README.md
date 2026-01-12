@@ -15,9 +15,13 @@ El objetivo principal es completar los desafíos del planeta para alcanzar el ob
 # Caracteristicas
 
 A. Diseño de un nivel jugable
+
 B. Creacion de menus principal y selector de nivel
+
 C. Creacion de menu de pausa
+
 D. Creacion de un sistema de gravedad personalizado que permite recorrer  superficies laterles, curvas, planetarias y boca abajo
+
 E. Diseño de modelos 3D personalizados para aprovechar el sistema de gravedad
 
 # Punto de partida
