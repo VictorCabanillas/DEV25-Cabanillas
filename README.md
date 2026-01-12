@@ -12,9 +12,17 @@ El prototipo reproduce las mecánicas esenciales de la práctica: exploración e
 
 El objetivo principal es completar los desafíos del planeta para alcanzar el objetivo final (estrella, artefacto o salida), a traves de la exploración, sistema de gravedad, puzles, interacción con el entorno y progresión del nivel.
 
+# Caracteristicas
+
+A. Diseño de un nivel jugable
+B. Creacion de menus principal y selector de nivel
+C. Creacion de menu de pausa
+D. Creacion de un sistema de gravedad personalizado que permite recorrer  superficies laterles, curvas, planetarias y boca abajo
+E. Diseño de modelos 3D personalizados para aprovechar el sistema de gravedad
+
 # Punto de partida
 
-El punto de partida de este proyecto es una plantilla base de Unreal Engine en tercera persona, modificada para implementar un sistema de gravedad planetaria personalizada.
+El punto de partida de este proyecto es la plantilla base de Unreal Engine de ThridPerson, modificada para implementar un sistema de gravedad planetaria personalizada.
 
 Esta base proporciona locomoción básica, control de cámara y estructura de nivel, sobre la que se ha construido el sistema de puzles y exploración en superficies curvas.
 
@@ -33,6 +41,7 @@ Estos deben descomprimirse directamente dentro de la carpeta Content, quedando a
 - Characters
 - Input
 - LevelPrototyping
+- ThridPerson
 
 Una vez colocadas estas carpetas dentro de Content, el proyecto estará listo para abrirse y ejecutarse directamente desde Unreal Engine.
 
@@ -110,33 +119,21 @@ Los errores de posicionamiento o lógica devuelven al jugador al último punto s
 # Mecánica
 ## Avatar
 
-Personaje en tercera persona.
+Personaje en tercera persona con movimiento libre sobre distintas superficies.
 
-Movimiento libre sobre superficies curvas.
-
-Cámara adaptativa a la gravedad local.
-
-Interacción con objetos mediante un botón dedicado.
+Camara controlable a traves del ratón.
 
 ## Sistema de gravedad
 
-Gravedad orientada hacia el centro del planeta.
+Distintos tipos de gravedad, direccional, planetaria, dirigida a un punto, etc.
 
-Transiciones suaves entre superficies.
-
-Reorientación automática de cámara y controles.
-
-Posibilidad de puzles basados en cambios de orientación.
+Con transiciones suaves entre superficies, reorientación automática de cámara y controles y posibilidad de puzles basados en cambios de orientación.
 
 ## Puzles
 
-Interruptores de presión.
+Interruptores de presión que activan.
 
-Plataformas móviles.
-
-Rotaciones de secciones del planeta.
-
-Activación remota de mecanismos visibles desde otras zonas.
+Plataformas móviles, rotaciones de secciones del planeta o aactivan remotamente de mecanismos visibles desde otras zonas.
 
 ## Contenido
 
@@ -198,6 +195,10 @@ classDiagram
     PuzzleElement <|-- RotatingSection
 ```
 
+# Diseño nivel
+
+![Imagen](Imgs/Diseño_nivel.png)
+
 # Licencia
 
 Los autores de la documentación, código y recursos de este trabajo conceden permiso permanente a los profesores de la Facultad de Informática de la Universidad Complutense de Madrid para utilizar nuestro material con fines educativos o de investigación, reconociendo expresamente nuestra autoría.
@@ -210,14 +211,18 @@ Código bajo licencia GNU Lesser General Public License 3.0 (LGPL)
 
 # Referencias
 
-Captain Toad: Treasure Tracker
-
-Super Mario Galaxy
-
 Unreal Engine – Third Person Template
+
+Unreal Engine – Level Prototyping
 
 Recursos modulares para prototipado 3D
 
+## Juegos similares
+
+[Captain Toad: Treasure Tracker](https://www.nintendo.com/es-es/Juegos/Juegos-de-Nintendo-Switch/Captain-Toad-Treasure-Tracker-1348071.html?srsltid=AfmBOooN9WjUNCGudlCVrHS-5wQCRce9tu8ul18bYEyVeYlOQ2X_nwIm)
+
+[Super Mario Galaxy](https://www.nintendo.com/es-es/Juegos/Programas-descargables-Nintendo-Switch/Super-Mario-Galaxy-2915395.html?srsltid=AfmBOorjMjshsk4m-llHvvTss4saoc07tZ8jiYv1_m5GC1Q0vrqYNzsH)
+
 # Enlace vídeo
 
-[Enlace]()
+[Enlace](https://drive.google.com/file/d/1sccKlNjA6s89wP_SbgGSM8IJzmHnCH4I/view?usp=sharing)
